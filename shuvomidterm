@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BOOKSHELF</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+/* Style the header */
+header {
+      padding: 40px;
+    text-align: center;
+    background: GRAY;
+    color: BLUE;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 40%;
+    display: block; 
+    cursor: pointer;
+    height: 450px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 10px 24px;
+   
+}
+
+/* Style the list inside the menu */
+nav ul { /* Make the buttons appear below each other */
+
+   
+}
+
+
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h1><B>BOOKSHELF</B></h1>
+</header>
+<section>
+
+
+  <nav>
+    <ul>
+      <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
+       
+      
+    </ul>
+  </nav>
+  
+  <article>
+  
+  
+    <div class="w3-container">
+  <h2>Displaying Panels</h2>
+  <p>Panels are the same as containers except for an added top and bottom margin.</p>
+
+  <div class="w3-panel w3-red"; width:50%;>
+    <p>I am a panel.</p>
+  </div>
+  <div class="w3-panel w3-green">
+    <p>I am a panel.</p>
+  </div>
+
+  <div class="w3-container w3-red">
+    <p>I am a container.</p>
+  </div>
+  <div class="w3-container w3-green">
+    <p>I am a container.</p>
+  </div>
+</div>
+  </article>
+    
+</section>
+
+
+<footer>
+  <p>Powered by <a href="http://www.iub.edu.bd/" target="_blank">IUB</a></p>
+</footer>
+
+</body>
+</html>
